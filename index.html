@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- header -->
+    <header>
+      <h1>Pomodoro</h1>
+      <p>lets make work easy ...</p>
+    </header>
+
+    <!-- main $ content -->
+    <main>
+      <!-- system $ watch -->
+      <button class="system" id='hour'>hour system</button>
+      <div id="watch">00:00:00</div>
+      <button class="system" id='half'>half system</button>
+      <!-- content -->
+      <div class=content>
+        <span class="or">OR</span>
+        <!-- form -->
+        <form>
+          <div>
+            <label for="" class=" worklabel">type your time work:</label>
+            <input id=work value='' >
+          </div>
+          <div>
+            <label for="" class="restlabel">type your time rest: </label>
+            <input id=rest value='' >
+          </div>
+        </form>
+
+        <!-- button of content -->
+        <button id=off class="system display" >close alarm</button>
+        <button id=go class='control'>GO</button>
+        <button id=stopW class="control display stop" >Go To Rest</button>
+        <button id=stopR class="control  stop display" >Go To Work</button>
+        <button id=stopT class="control timer display" >Stop Timer</button>
+        <button id=reset class="control display" >Reset</button>
+        <button id=playT class="control timer display" >Play Timer</button>
+
+        <!-- sentence for positive energy -->
+        <q>The man who moves a mountain begins by carrying away small stones.</q>
+        <p class="positive pw display">don't waste your time, make impossible possible ...</p>
+        <p class="positive pr display">Don't waste your rest time at work, you will waste both of them ...</p>
+
+        <!-- sentence of warning -->
+        <p class="enter display">enter number only !</p>
+        <p class="warning display" >choose your system or type your time...</p>
+
+        <!-- words of animation -->
+        <span class="span go">LET'S</span>
+        <span class="work span">WORK !</span>
+
+        <!-- timer & audio -->
+        <div id="time"></div>
+        <audio style="display: none;" id="player" loop>
+          <source src="" type="audio/mp3">
+        </audio>
+      </div>
+    </main>
+    
+    <script src="js/app.js" type="text/javascript"></script>
+  </body>
+</html>
