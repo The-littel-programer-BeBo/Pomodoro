@@ -82,6 +82,7 @@ function GO(i){
   const reset = document.getElementById('reset');
   reset.classList.remove('display')
   q.classList.add('display')
+  off.classList.add('display')
   // set the variables of timer
   s = 1;
   m = 0;
