@@ -159,12 +159,12 @@ stopT.onclick=_=>{
 
 // play timer
 playT.onclick=()=>{
-  debugger
   playT.classList.add('display')
   stopT.classList.remove('display')
   pause = document.getElementById('time').innerHTML;
-  s = Number(pause[3] + pause[4]);
+  s = Number(pause[3] + pause[4]) + 1;
   m = Number(pause[0] + pause[1]);
+  player.src = 'audio/st.mp3'
   if(!stopW.classList.contains('display')){
     x = work.value;
   }else{
@@ -188,7 +188,6 @@ playT.onclick=()=>{
       m += 1;
     }
     if(m == x && !off.classList.contains('display') ){
-      player.src = 'audio/st.mp3'
       player.play();
     }
   },1000)
@@ -263,6 +262,11 @@ if(work.value != ''){
   if( (isNaN(rest.value) && rest.value !== '') || (isNaN(work.value) && work.value !== '') ){
     enter.classList.remove('display')
     enter.classList.add('flashing')
+    if(!pr.classList.contains('display')){
+      pr.classList.add('display')
+    }else if(!pw.classList.contains('display')){
+      pw.classList.add('display')
+    }
   }else{
     enter.classList.add('display')    
   }
