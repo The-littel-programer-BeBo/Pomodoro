@@ -260,7 +260,7 @@ main .warning{
   font-weight: 600;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 0%;
+  bottom: 10%;
   letter-spacing: 1.4px;
 }
 
@@ -296,7 +296,7 @@ main .go{
 }
 main .work{
   animation-delay: 1000ms;
-  left:68%;
+  left:70%;
 }
 @keyframes span {
   0%{
@@ -353,7 +353,7 @@ main .work{
     bottom: 43%;
   }
   main .warning,main .enter{
-    font-size:1.3em
+    font-size:1.2em
   }
   main q{
     font-size: 1.4em;
